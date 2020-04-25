@@ -71,8 +71,8 @@
               <div class="card mb-2 box-shadow">
       
                 <div class="card-body">
-				<small class="text-muted">R1</small>
-				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#Heating">
+				<small class="text-muted">Relay 1</small>
+				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#heating">
 				  Settings
 				</a>
                   <p class="card-text">Heating</p>
@@ -97,8 +97,8 @@
               <div class="card mb-2 box-shadow">
       
                 <div class="card-body">
-				<small class="text-muted">R2</small>
-				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#exampleModalCenter">
+				<small class="text-muted">Relay 2</small>
+				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#cooling">
 				  Settings
 				</a>
                   <p class="card-text">Cooling</p>
@@ -123,7 +123,7 @@
               <div class="card mb-2 box-shadow">
       
                 <div class="card-body">
-				<small class="text-muted">R3</small>
+				<small class="text-muted">Relay 3</small>
 				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#ventilation">
 				  Settings
 				</a>				
@@ -150,8 +150,8 @@
               <div class="card mb-2 box-shadow">
       
                 <div class="card-body">
-				<small class="text-muted">R4</small>
-				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#exampleModalCenter">
+				<small class="text-muted">Relay 4</small>
+				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#exhaustion">
 				  Settings
 				</a>				
                   <p class="card-text">Exhaustion</p>
@@ -177,7 +177,7 @@
               <div class="card mb-2 box-shadow">
       
                 <div class="card-body">
-				<small class="text-muted">R5</small>
+				<small class="text-muted">Relay 5</small>
 				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#exampleModalCenter">
 				 	Settings
 				</a>				
@@ -203,8 +203,8 @@
               <div class="card mb-2 box-shadow">
       
                 <div class="card-body">
-				<small class="text-muted">R6</small>
-				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#exampleModalCenter">
+				<small class="text-muted">Relay 6</small>
+				<a href=""  class="badge badge-warning" data-toggle="modal" data-target="#lighting">
 				  Settings
 				</a>				
                   <p class="card-text">Lighting</p>
@@ -246,16 +246,79 @@
 	
 	
 	
-	
-	<!-- Button trigger modal -->
+<!-- Button trigger modal -->
 
 
-<!-- Modal -->
+<!-- Heating -->
+<div class="modal fade" id="heating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Relay 1 - Settings (Heating)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+		<form>
+		  <div class="form-row">
+			<div class="col-3">
+			  <input type="number" class="form-control" placeholder="ºC">
+				<small id="emailHelp" class="form-text text-muted">Temperature below</small>
+
+			</div>
+		  </div>
+		  
+		</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cooling -->
+<div class="modal fade" id="cooling" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Relay 2 - Settings (Cooling)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+		<form>
+		  <div class="form-row">
+			<div class="col-3">
+			  <input type="number" class="form-control" placeholder="ºC">
+				<small id="emailHelp" class="form-text text-muted">Temperature above</small>
+
+			</div>
+		  </div>
+		  
+		</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventilation -->
 <div class="modal fade" id="ventilation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">(R3) Ventilation	 - Settings</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Relay 3 - Settings (Ventilation)</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -315,6 +378,80 @@
     </div>
   </div>
 </div>
+
+<!-- Exhaustion -->
+<div class="modal fade" id="exhaustion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Relay 4 - Settings (Exhaustion)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+		<form>
+		  <div class="form-row">
+			<div class="col-3">
+			  <input type="number" class="form-control" placeholder="ºC">
+				<small id="emailHelp" class="form-text text-muted">Temperature below</small>
+
+			</div>
+		  </div>
+		  
+		</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Lighting -->
+<div class="modal fade" id="lighting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Relay 6 - Settings (Lighting)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+		<form>
+		  <div class="form-row ">
+			<div class="col-3">
+			  <input type="number" class="form-control" placeholder="hours">
+				<small id="emailHelp" class="form-text text-muted">Timer In</small>
+			</div>
+	
+				<small>
+				  <a class="text-muted">to</a>
+				</small>
+	
+			<div class="col-3">
+			  <input type="number" class="form-control" placeholder="hours">
+				<small id="emailHelp" class="form-text text-muted">Timer Out</small>
+			</div>
+		  </div>
+		  
+		</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
